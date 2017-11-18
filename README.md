@@ -7,4 +7,4 @@ To run:
 
 To scan: `mvn -U package scout:scan`
 
-To scan & build: `mvn clean install spring-boot:run`
+To build, scan, & run: `mvn install spring-boot:run`
