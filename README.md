@@ -1,3 +1,4 @@
+# Scout Maven Demo Cravings Bakery
 To build: `mvn package`
 
 To run:
