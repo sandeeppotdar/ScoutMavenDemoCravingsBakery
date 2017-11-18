@@ -4,17 +4,16 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html">
-	<title>Taste of India</title>
+	<title>Cravings Bakery</title>
 </head>
 <body>
-<h2>Welcome to Taste of India</h2>
+<h2>Welcome to Cravings Bakery</h2>
 	<%= "Enter your rewards account number:" %>
-	<form method="get" action ="balance">
+	<form method="get" action ="/balance">
     	<input type="text" name="account">
     	<input type="submit" value="Check Balance">
 	  </form>
 	<br />
-
 	${results}
 </body>
 </html>

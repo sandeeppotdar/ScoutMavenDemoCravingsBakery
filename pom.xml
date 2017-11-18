@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.whitehatsec.sourcex</groupId>
-    <artifactId>taste-of-india-demo</artifactId>
+    <groupId>com.whitehatsec.scout</groupId>
+    <artifactId>cravings-bakery-demo</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>sourcex taste of india demo webapp</name>
+    <name>cravings bakery scout demo webapp</name>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,15 +13,11 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <scout.disableBrowserLaunch>true</scout.disableBrowserLaunch>
+        <scout.asyncMode>false</scout.asyncMode>
+        <scout.findingsCountThreshold>0</scout.findingsCountThreshold>
+        <scout.findingsRatingThreshold>High</scout.findingsRatingThreshold>
     </properties>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>sourcex-snapshots</id>
-            <name>sourcex-snapshots</name>
-            <url>https://nexus.momentum-dev.dev.whs:8082/repository/maven-snapshots/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencies>
         <!-- Postgres -->
@@ -53,13 +49,13 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+ 
     <build>
         <plugins>
             <plugin>
                 <groupId>com.whitehatsec</groupId>
-                <artifactId>sourcex-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <artifactId>scout-maven-plugin</artifactId>
+                <version>1.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -70,4 +66,5 @@
             </plugin>
         </plugins>
     </build>
+ 
 </project>
