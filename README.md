@@ -6,3 +6,5 @@ To run:
  2. `mvn spring-boot:run` and browse to http://localhost:8080/balance
 
 To scan: `mvn -U package scout:scan`
+
+To scan & build: `mvn clean install spring-boot:run`
